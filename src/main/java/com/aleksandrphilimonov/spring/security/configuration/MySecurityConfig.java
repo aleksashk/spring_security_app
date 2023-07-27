@@ -13,13 +13,13 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         UserBuilder userBuilder = User.withDefaultPasswordEncoder();
         auth.inMemoryAuthentication()
-                .withUser(UserBuilder.username("aleksandr")
+                .withUser(userBuilder.username("aleksandr")
                         .password("aleksandr")
                         .roles("EMPLOYEE"))
-                .withUser(UserBuilder.username("andry")
+                .withUser(userBuilder.username("andry")
                         .password("andry")
                         .roles("HR"))
-                .withUser(UserBuilder.username("zhanna")
+                .withUser(userBuilder.username("zhanna")
                         .password("zhanna")
                         .roles("MANAGER", "HR"));
 
