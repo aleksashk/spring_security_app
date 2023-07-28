@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MyController {
 
     @GetMapping("/")
-    public String getInfoFOrAllEmps() {
+    public String getInfoForAllEmps() {
         return "view_for_all_employees";
     }
 
@@ -15,6 +15,7 @@ public class MyController {
     public String getInfoOnlyForHR() {
         return "view_for_hr";
     }
+
     @GetMapping("/manager_info")
     public String getInfoOnlyForManagers() {
         return "view_for_managers";

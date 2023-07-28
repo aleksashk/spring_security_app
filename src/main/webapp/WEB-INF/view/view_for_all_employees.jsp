@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>All employee</title>
+    <title>Information for employee</title>
 </head>
 <body>
 
@@ -26,6 +26,9 @@ Only for HR staff
 <input type="button" value="Performance"
        onclick="window.location.href = 'manager_info'">
 Only for MANAGERS
+
+<br>
+<br>
 
 </body>
 </html>
